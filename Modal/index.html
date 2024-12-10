@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Info Modal</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <!-- Trigger buttons -->
+  <button class ="open-modal" onclick="openStudentModal({
+    name: 'Jomari O. Madriaga',
+    number: '22-0243',
+    course: 'BSIT',
+    section: 'SBIT - 3I',
+    schoolYear: '2022-2026',
+    picture: 'jokjok.jpg'
+  })">View Jomari's Info</button>
+  
+  <button class = "open-modal" onclick="openStudentModal({
+    name: 'Lenard Zuela',
+    number: '45678912',
+    section: 'SBIT - 3I',
+    schoolYear: '2022-2026',
+    picture: 'path-to-mark-picture.jpg'
+  })">View Lenard's Info</button>
+  
+  <button class = "open-modal" onclick="openProfessorModal({
+    name: 'Roque',
+    teachingCourse: 'IT',
+    picture: 'path-to-mark-picture.jpg'
+  })">View Roque's Info</button>
+  
+  <!-- Student Modal -->
+  <div id="studentModal" class="modal"></div>
+
+
+  <!-- Professor Modal -->
+  <div id="professorModal" class="modal">
+ 
+
+  <script src="script.js"></script>
+</body>
+</html>
